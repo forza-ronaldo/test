@@ -1,0 +1,16 @@
+.con-notifications
+{
+    position: relative;
+}
+.span-notifications {
+    color: #ffffff;
+    height: 22px;
+    position: absolute;
+    top: -12px;
+    left: 8px;
+    background: red;
+    padding: 1px 1px;
+    border-radius: 20%;
+    display: none;
+}
+
