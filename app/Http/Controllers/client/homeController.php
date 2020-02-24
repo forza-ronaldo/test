@@ -9,7 +9,6 @@ use Illuminate\Http\Request;
 
 class homeController extends Controller
 {
-
     public  function  index()
     {
         $users=User::Where('group_id','=','2')->count();
@@ -28,12 +27,13 @@ class homeController extends Controller
 
         $count_total = $count_electricty + $count_water + $count_telecome;
         return view('client.client',compact('users','count_total'));
-    }
+    }//end index
     public function telecome(Request $request)
     {
         $request->validate([
             'phone_number'=>'required|numeric'
         ]);
+
         $phone_number=$request->phone_number;
         $data=file_get_contents('http://localhost:777/billingCorporation/public/api/newTelecomeBill?searsh='.$phone_number);
         $data=json_decode($data);
@@ -45,7 +45,9 @@ class homeController extends Controller
        $request->validate([
             'counter_number'=>'required|numeric'
         ]);
+
         $counter_number=$request->counter_number;
+
         $data=file_get_contents('http://localhost:777/billingCorporation/public/api/newWaterBill?searsh='.$counter_number);
         $data=json_decode($data);
         $bills=$data->data;
@@ -57,24 +59,11 @@ class homeController extends Controller
         $request->validate([
             'hour_number'=>'required|numeric'
         ]);
+
         $hour_number=$request->hour_number;
         $data=file_get_contents('http://localhost:777/billingCorporation/public/api/newElectricityBill?searsh='.$hour_number);
         $data=json_decode($data);
         $bills=$data->data;
         return view('client.bill.yourBills',compact('bills'));
-    }
-
-    public function store(Request $request)
-    {
-        //
-    }
-    public function show($id)
-    {
-        //
-    }
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
+    }//end electricity
 }

@@ -6,11 +6,7 @@ use Illuminate\Support\Facades\Hash;
 
 class createUserSite extends Seeder
 {
-    /**
-     * Run the database seeds.
-     *
-     * @return void
-     */
+
     public function run()
     {
         $uesr = User::create([

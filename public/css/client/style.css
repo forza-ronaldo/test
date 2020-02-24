@@ -14,7 +14,10 @@
 /************************************
 SKELETON
 ************************************/
-
+.receipt .td-title
+{
+    width: 100px;
+}
 body {
     background-image: url("../../image/bg.jpg");
     font-size: 18px;

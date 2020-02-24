@@ -94,7 +94,6 @@ class questionController extends Controller
         );
 
         $details = [
-            // 'title' => $request->title,
             'body' => $request->text_answer,
         ];
         \Mail::to($question->User->email)->send(new \App\Mail\sendAnswer($details));

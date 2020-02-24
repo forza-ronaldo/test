@@ -62,6 +62,7 @@
             </div><!-- end row -->
 
 
+
             <div class="row">
                 <div class="col-md-6">
                     <div class="milestone-counter c1">
@@ -115,4 +116,5 @@
         </div>
     </section>
     @endsection
+
 

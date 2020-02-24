@@ -17,7 +17,7 @@ class CreatePlacesTable extends Migration
             $table->integer('id')->autoIncrement();
             $table->string('name');
             $table->text('location');
-            $table->string('center_type');
+            $table->tinyInteger('center_type');
             $table->string('lat_lag');
         });
     }
