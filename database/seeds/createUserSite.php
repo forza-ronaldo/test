@@ -25,7 +25,7 @@ class createUserSite extends Seeder
 
         User::create([
             'id_number' => '10000012312',
-            'email' => 'c@c.c',
+            'email' => 'ghiathshamma2002@hotmail.com',
             'name' => 'client444',
             'user_name' => 'client444',
             'phone' => '0994547308',

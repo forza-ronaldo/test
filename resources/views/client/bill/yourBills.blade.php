@@ -118,19 +118,18 @@
                     </div>
                     <br>
                 @endforeach
-                    @endif()
 
-                @if($bills=='هذا الرقم غير موجود')
-                        <div class="card con-bills mt-5" >
-                            <div class="card-header text-center">
-                                <h2>لا يوجد فواتير جديدة</h2>
-                            </div>
-                        </div>
-                    @endif()
+                @else
+                <div class="card con-bills mt-5" >
+                    <div class="card-header text-center">
+                        <h2>لا يوجد فواتير جديدة</h2>
+                    </div>
+                </div>
+
+                @endif()
             </div>
         </div>
     </div>
-
 @endsection
 @push('style')
     <style>

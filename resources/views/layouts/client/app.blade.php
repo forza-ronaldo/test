@@ -27,8 +27,7 @@
     <link href="{{asset('js/plugins/morris/morris.css') }}" rel="stylesheet">
 
     <link rel="stylesheet" href="{{asset('css/client/style.css')}}">
-    @stack('style')
-    <style>
+    @stack('style')  <style>
         .span-Basket
         {
             position:absolute !important;
@@ -56,6 +55,7 @@
             position: relative;
         }
     </style>
+
     {{-- font awesome --}}
     <link href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
 </head>

@@ -57,7 +57,7 @@
                 <label class="radio-inline"><input type="radio"  value="1" name="gender">female </label>
             </div>
         <!--start permissions section-->
-        <?php $models=['users','questions'];?>
+        <?php $models=['users','places','questions'];?>
         <?php $options=['create','read','update','delete','send'];?>
         <div class="row">
             <div class="col-md-12">
@@ -69,7 +69,7 @@
                         </li>
                         <li>
                             @foreach($options as $option)
-                            @if ($option=='send' && $model=='users')
+                            @if ($option=='send' && ($model=='users' || $model=='places'))
 
                             @else
                             <label>@lang('site.'.$option)</label>

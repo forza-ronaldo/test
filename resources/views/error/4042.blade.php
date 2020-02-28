@@ -8,10 +8,9 @@
     <style>
         body{
     margin: 0;
-    padding: 20px;
     background-color:#FFC900;
     font-family: arial;
-  height: 700px
+  height: 663px
 }
 
 .info{
@@ -50,7 +49,7 @@
     line-height: 80px;
     color:#ffc900;
     background-color: #fff;
-    font-size: 280%;
+    font-size: 134%;
     position: absolute;
     top:490px;
     left:40%;
@@ -158,7 +157,7 @@
 
 <div class="box">
             <div>
-                not found !
+                the number not found !
             </div>
             <p><span>error 404 !</span> SORRY PAGE NOT FOUND </p>
         </div>

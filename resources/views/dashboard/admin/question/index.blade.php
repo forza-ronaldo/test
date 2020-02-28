@@ -81,7 +81,6 @@
 
     <div class="card col-2">
         <a class="nav-link con-notifications" href="{{route('dashboard.questionAwaitingTheAnswer')}}">الاسئلة التي تنتظر الرد
-            <span class='span-notifications'>@isset($count_question_wait){{$count_question_wait}} @endisset</span></a>
         <a class="nav-link" href="{{route('dashboard.pendingQuestions')}}">الاسئلة المعلقة</a>
     </div>
 </div>

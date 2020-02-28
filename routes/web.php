@@ -44,6 +44,12 @@ Route::group(
             Route::post('Telecome/bill/pay/all','client\billTelecomeController@payAll')->name('telecome.bill.payAll');
             Route::post('Electricity/bill/pay/all','client\billElecticityController@payAll')->name('electricity.bill.payAll');
             Route::post('Water/bill/pay/all','client\billWaterController@payAll')->name('water.bill.payAll');
+
+            Route::get('verify/{token}','client\clientController@verify')->name('verify');
+            Route::get('resetPassword','client\clientController@showResetPasswordForm')->name('showResetPasswordForm');
+            Route::post('searshYourAccount','client\clientController@searshYourAccount')->name('searshYourAccount');
+            Route::get('showSetNewPassword/{token_reset_password}','client\clientController@showsetNewPassword')->name('showSetNewPassword');
+            Route::post('setNewPassword/{token_reset_password}','client\clientController@setNewPassword')->name('setNewPassword');
         });
 
         Route::prefix('myBills/new')->group(function () {

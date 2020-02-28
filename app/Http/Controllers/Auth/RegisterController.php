@@ -9,6 +9,7 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use Illuminate\Support\Str;
 
 class RegisterController extends Controller
 {
@@ -54,7 +55,7 @@ class RegisterController extends Controller
     protected function validator(array $data)
     {
         return Validator::make($data, [
-            'id_number' => ['required', 'string', 'max:11'],
+           /* 'id_number' => ['required', 'string', 'max:11'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'name' => ['required', 'string', 'min:3', 'max:20'],
             'user_name' => ['required', 'string', 'min:6', 'max:30', 'unique:users'],
@@ -63,7 +64,7 @@ class RegisterController extends Controller
             'password_confirmation' => ['required', 'string', 'min:8'],
             'city' => ['required', 'string'],
             'bank_id' => ['required', 'numeric', 'unique:users,bank_id'], //'exists:bemo_banks,id'
-            'gender' => ['required', 'numeric'],
+            'gender' => ['required', 'numeric'],*/
         ]);
     }
 
@@ -79,7 +80,7 @@ class RegisterController extends Controller
         $found = file_get_contents($url);
 
         if ($found == 'true') {
-            return User::create([
+            $user= User::create([
                 'id_number' => $data['id_number'],
                 'email' => $data['email'],
                 'name' => $data['name'],
@@ -90,7 +91,10 @@ class RegisterController extends Controller
                 'bank_id' => $data['bank_id'],
                 'password' => Hash::make($data['password']),
                 'group_id' => '2',
+                'token'=>Str::random(25),
             ]);
+            $user->sendVerificationEmail();
+            return  $user;
         } else {
             session()->flash('msg', 'الرقم الوطني ورقم الحساب غير متطابقين');
         }

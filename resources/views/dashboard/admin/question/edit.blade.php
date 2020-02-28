@@ -29,7 +29,12 @@
             <input type="radio"  {{$question->status_view==2?'checked':''}} value="2"  name="status_view" >اخفاء
            <br> <input type="radio"  {{$question->status_view==1?'checked':''}} value="1"  name="status_view" >اظهار
             </div>
-
+            <label>center type</label>
+            <div>
+                <label class="radio-inline"><input type="radio"   {{$question->center_type==0?'checked':''}} value="0" name="center_type" >ماء</label>
+                <label class="radio-inline"><input type="radio"   {{$question->center_type==1?'checked':''}} value="1" name="center_type">كهرباء </label>
+                <label class="radio-inline"><input type="radio"   {{$question->center_type==2?'checked':''}} value="2" name="center_type">اتصالات </label>
+            </div>
             @if ($errors->any())
                 <div class="alert alert-danger">
                     <ul>

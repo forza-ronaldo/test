@@ -20,7 +20,7 @@
 </div>{{-- end row --}}
 <div class="row  mt-5">
     <div class="col-4">
-        <div class="card ">
+        <div class="card bg-info">
             <div class="card-body">
                 <h5 class="card-title">مياه</h5>
                 <p class="card-text">{{is_null($count_water)?0:$count_water}}</p>
@@ -28,7 +28,7 @@
         </div>
     </div>{{-- end card --}}
     <div class="col-4">
-        <div class="card ">
+        <div class="card bg-success">
             <div class="card-body">
                 <h5 class="card-title">كهرباء</h5>
                 <p class="card-text">{{is_null($count_electricty)?0:$count_electricty}}</p>
@@ -36,7 +36,7 @@
         </div>
     </div>{{-- end card --}}
     <div class="col-4">
-        <div class="card ">
+        <div class="card bg-warning">
             <div class="card-body">
                 <h5 class="card-title">اتصالات</h5>
                 <p class="card-text">
@@ -50,7 +50,7 @@
 <div class="row mt-5">
 
     <div class="col-6">
-        <div class="card ">
+        <div class="card bg-danger  ">
             <div class="card-body">
                 <h5 class="card-title">عدد الأعضاء
                     المسجلين
@@ -60,7 +60,7 @@
         </div>
     </div>{{-- end card --}}
     <div class="col-6">
-        <div class="card ">
+        <div class="card bg-secondary">
             <div class="card-body">
                 <h5 class="card-title">الاجمالي</h5>
                 <p class="card-text">{{ $count_total }}</p>

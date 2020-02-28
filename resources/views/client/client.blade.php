@@ -1,5 +1,12 @@
 @extends('layouts/client/app')
 @section('content')
+
+    @if(auth()->user()->verified())
+        @if(session()->has('success'))
+            <div class="alert alert-success text-center container">
+                {{session()->get('success')}}
+            </div>
+        @endif()
     <section class="section overfree">
         <div class="container">
             <div class="section-title text-center">
@@ -115,6 +122,14 @@
 
         </div>
     </section>
+    @else
+       <div class="container">
+           <div class="text-center alert alert-danger">
+               <h3>The account has not been verified</h3>
+              <h5>Please go to your email to verify the mail that we have sent to you to confirm your account</h5>
+           </div>
+       </div>
+    @endif()
     @endsection
 
 

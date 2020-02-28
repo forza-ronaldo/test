@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Notifications\sendVerify;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -18,7 +19,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'id_number', 'user_name', 'phone', 'city', 'gender', 'group_id', 'bank_id'
+        'name', 'email', 'password', 'id_number', 'user_name', 'phone', 'city', 'gender', 'group_id', 'bank_id','token','token_reset_password'
     ];
 
     /**
@@ -42,5 +43,14 @@ class User extends Authenticatable
     public function Questions()
     {
         return $this->hasMany(question::class);
+    }
+    public  function  verified()
+    {
+        return $this->token===null;
+    }
+    public  function  sendVerificationEmail()
+    {
+        $this->notify(new sendVerify($this));
+
     }
 }

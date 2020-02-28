@@ -20,7 +20,7 @@
                                 </tr>
                             </thead>
                         </table>
-                        <td colspan="2"><input type="submit" class="btn btn-primary form-control disabled btn-send-reply" value="ارسال"><i class="fa fa-send"></i> </td>
+                        <input type="submit" class="btn-sm btn-primary form-control disabled btn-send-reply" value="ارسال">
                     </div>
                 </form>
            </div>

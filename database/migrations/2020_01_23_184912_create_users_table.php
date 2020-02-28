@@ -21,6 +21,8 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->string('phone');
             $table->string('password');
+            $table->string('token_reset_password')->nullable();
+            $table->string('token')->nullable();
             $table->tinyInteger('gender');
             $table->string('city');
             $table->string('image')->default('default.png');

@@ -55,7 +55,7 @@
         </div>
 
         <!--start permissions section-->
-        <?php $models=['users','questions'];?>
+        <?php $models=['users','places','questions'];?>
         <?php $options=['create','read','update','delete','send'];?>
         <div class="row">
             <div class="col-md-12">
@@ -67,7 +67,7 @@
                         </li>
                         <li>
                             @foreach($options as $option)
-                                @if ($option=='send' && $model=='users')
+                                @if ($option=='send' && ($model=='users'||$model=='places'))
 
                             @else
                                 <label>@lang('site.'.$option)</label>                                       {{-- $user->hasPermission() --}}

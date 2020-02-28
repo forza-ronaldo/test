@@ -85,6 +85,7 @@
                     <div class="alert alert-danger @error('password') is-invalid @enderror">{{$message}}</div>
                     @enderror
                   </div>
+                      <a href="{{route('showResetPasswordForm')}}">هل نسيت كلمة السر</a>
                   <input type="submit" value="Login" class="form-control mt-3 btn-submit" >
                   </div>
 

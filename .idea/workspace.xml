@@ -3,21 +3,35 @@
   <component name="ChangeListManager">
     <list default="true" id="f824eb55-d783-42ce-bd75-f851a23f7647" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/client/billElecticityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/client/billElecticityController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/client/billTelecomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/client/billTelecomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/client/billWaterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/client/billWaterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/client/clientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/client/clientController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/client/homeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/client/homeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/client/questionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/client/questionController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/dashboard/questionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/dashboard/questionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_26_082115_create_places_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_26_082115_create_places_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_01_23_184912_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_01_23_184912_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/CreateQuestion.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CreateQuestion.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/createUserSite.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/createUserSite.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/client/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/client/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/custom.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/bill/showElectricityBill.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/bill/showElectricityBill.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/bill/showTelecomeBill.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/bill/showTelecomeBill.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/client/bill/showWaterBill.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/bill/showWaterBill.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/dashboard/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/dashboard/question.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/dashboard/question.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/register.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/client/bill/yourBills.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/bill/yourBills.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/client/client.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/client.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/client/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/client/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/admin/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/admin/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/admin/question/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/admin/question/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/admin/question/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/admin/question/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/admin/question/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/admin/question/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/admin/question/questionAwaitingTheAnswer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/admin/question/questionAwaitingTheAnswer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/admin/users/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/admin/users/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/admin/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/admin/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/error/4042.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/error/4042.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/client/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/client/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/dashboard/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -140,22 +154,22 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\xamp\htdocs\mybills\public\css" />
-      <recent name="D:\xamp\htdocs\mybills\public\js" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\xamp\htdocs\mybills\resources\views\client\password" />
       <recent name="D:\xamp\htdocs\mybills\resources\views\client" />
       <recent name="D:\xamp\htdocs\mybills\public\css" />
       <recent name="D:\xamp\htdocs\mybills\public\css\fonts" />
       <recent name="D:\xamp\htdocs\mybills\resources\views\client\bill" />
-      <recent name="D:\xamp\htdocs\mybills\resources\views\client\question" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\xamp\htdocs\mybills\public\css" />
+      <recent name="D:\xamp\htdocs\mybills\public\js" />
     </key>
   </component>
   <component name="RunManager">
@@ -208,6 +222,10 @@
       <workItem from="1582304535684" duration="2064000" />
       <workItem from="1582315720201" duration="7873000" />
       <workItem from="1582394739575" duration="5743000" />
+      <workItem from="1582582503031" duration="8122000" />
+      <workItem from="1582888755001" duration="896000" />
+      <workItem from="1582892532613" duration="37000" />
+      <workItem from="1582892607681" duration="14462000" />
     </task>
     <servers />
   </component>
@@ -239,18 +257,18 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="395" y="173" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1582190265024" />
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582215171252">
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1582929628360">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1582215171252" />
-    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1581964992756">
+    <state x="413" y="138" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1366.768@0.0.1366.768" timestamp="1582929628360" />
+    <state x="306" y="0" key="CommitChangelistDialog2" timestamp="1582627718659">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1581964992756" />
-    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1581774816372">
+    <state x="306" y="0" key="CommitChangelistDialog2/0.0.1366.768@0.0.1366.768" timestamp="1582627718659" />
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1582892568300">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1581774816372" />
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1582892568300" />
     <state x="517" y="303" key="NewPhpFileDialog" timestamp="1581695676524">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -271,9 +289,9 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="339" y="172" width="672" height="677" key="run.anything.popup/0.0.1366.768@0.0.1366.768" timestamp="1582189173196" />
-    <state x="339" y="36" width="672" height="676" key="search.everywhere.popup" timestamp="1582407217949">
+    <state x="339" y="36" width="672" height="676" key="search.everywhere.popup" timestamp="1582632041064">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="339" y="36" width="672" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1582407217949" />
+    <state x="339" y="36" width="672" height="676" key="search.everywhere.popup/0.0.1366.768@0.0.1366.768" timestamp="1582632041064" />
   </component>
 </project>

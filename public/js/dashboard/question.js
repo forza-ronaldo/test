@@ -10,7 +10,7 @@ $(document).ready(function() {
                         </th>
                         <td>
                             <button class="btn btn-sm btn-danger btn-delete-answer">
-                                <i class="fa fa-trash">حذف</i>
+                                <i class="fa fa-trash"> حذف</i>
                             </button>
                         </td>
                 </tr>

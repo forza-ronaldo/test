@@ -24,9 +24,8 @@ class questionController extends Controller
         $questions = question::where('status_view', 1)->when($request->searsh, function ($query) use ($request) {
             return $query->where('text_question', 'like', '%' . $request->searsh . '%');
         })->paginate(5);
-        $count_question_wait = question::where('status_view', 0)->count();
 
-        return view('dashboard.admin.question.index', compact('questions','count_question_wait'));
+        return view('dashboard.admin.question.index', compact('questions'));
     } //end index
 
 
@@ -42,8 +41,9 @@ class questionController extends Controller
         $request->validate([
             'text_question' => 'required|unique:questions|max:255',
             'text_answer' => 'required|max:255',
+            'center_type' => 'required|numeric'
         ]);
-        $request_data = $request->all();
+        $request_data = $request->only(['text_question', 'text_answer', 'center_type']);
         $request_data['status_view'] = '1';
         $request_data['user_id'] = Auth::user()->id;
         question::create($request_data);
@@ -60,11 +60,14 @@ class questionController extends Controller
     public function update(Request $request, question $question)
     {
         $request->validate([
-            'text_question' => 'required|max:255|' . Rule::unique('questions')->ignore($question->text_question, 'text_question'),
-            'text_answer' => 'required|max:255',
+            'text_question' => 'required|string|max:255|' . Rule::unique('questions')->ignore($question->text_question, 'text_question'),
+            'text_answer' => 'required|string|max:255',
+            'center_type' => 'required|numeric',
+            'status_view' => 'required|numeric'
+
         ]);
-        $request_data = $request->all();
-        $request_data['user_id'] = '1';
+        $request_data = $request->only(['text_question', 'text_answer', 'center_type', 'status_view']);
+        //$request_data['user_id'] = '1';
         $question->update($request_data);
         session()->flash('success', __('site.msg_edit'));
         return redirect(route('dashboard.question.index'));
@@ -76,12 +79,14 @@ class questionController extends Controller
         session()->flash('success', __('site.msg_delete'));
         return redirect(route('dashboard.question.index'));
     } //end destory
-    public function questionAwaitingTheAnswer()
+    public function questionAwaitingTheAnswer(Request $request)
     {
-        $questions = question::where('status_view', 0)->paginate(3);
-        $count_question_wait = question::where('status_view', 0)->count();
 
-        return view('dashboard.admin.question.questionAwaitingTheAnswer', compact('questions','count_question_wait'));
+        $questions = question::where('status_view', 0)->when($request->searsh, function ($query) use ($request) {
+            return $query->where('id', '=', $request->searsh);
+        })->paginate(3);
+
+        return view('dashboard.admin.question.questionAwaitingTheAnswer', compact('questions'));
     } //end questionAwaitingTheAnswer
 
     public function sendReply(Request $request, question $question)
